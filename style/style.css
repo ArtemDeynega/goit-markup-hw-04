@@ -14,7 +14,9 @@ html {
 }
 
 :root {
+      --hero-background-color:rgba(47, 48, 58, 0.4);
       --primary-text-color: #212121;
+      --background-color-section: #AFB1B8;
       --title-text-color: #757575;
       --accent-color: #2196F3;
       --primary-white-color: #FFFF;
@@ -66,7 +68,7 @@ img {
 /* =======CONTAINER====== */
 
 .container {
-      width: 1230px;
+      width: 1200px;
       padding-left: 15px;
       padding-right: 15px;
       margin: 0 auto;
@@ -92,9 +94,9 @@ img {
       align-items: center;
       width: 1200px;
       margin: 0 auto;
-      
 
-      
+
+
 
 
 
@@ -123,13 +125,46 @@ img {
 .site-list-item:not(:last-child) {
       margin-right: 50px;
 }
+
 .section-aside-list:not(:last-child) {
       margin-right: 30px;
 }
+.section-aside-list::before {
+      content: "";
+      display: block;
+      height: 120px;
+      width: 270px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #F5F4FA;
+      ;
+      background-position: center;
+      
+}
+.icon-antenna::before {
+      background-image: url(../image/aside/antenna1.svg);
+      background-size: 70px;
+      
+}
+.icon-clock::before{
+      background-image: url(../image/aside/clock1.svg);
+      background-size: 70px;
+}
+.icon-diagram::before {
+      background-image: url(../image/aside/diagram1.svg);
+      background-size: 70px;
+
+}
+.icon-astronaut::before {
+      background-image: url(../image/aside/astronaut1.svg);
+      background-size: 70px;
+
+}
 .section-aside .section-aside-list {
+      
       width: 270px;
       flex-wrap: wrap;
-      
+
 
 }
 
@@ -141,7 +176,9 @@ img {
       font-weight: 700;
       font-style: normal;
       line-height: .838;
-      letter-spacing: 0.03em
+      letter-spacing: 0.03em;
+      
+      
 }
 
 .logo-accent {
@@ -161,7 +198,8 @@ img {
       letter-spacing: 0.02em;
 
 }
-.address-mail + .address-tel {
+
+.address-mail+.address-tel {
       margin-left: 30px;
 }
 
@@ -194,10 +232,17 @@ img {
 .hero {
       padding-top: 200px;
       padding-bottom: 200px;
-
+      max-width: 1600px;
       min-height: 600px;
-      background-color: #2F303A;
       text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #000000;
+      background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../image/hero-img/header-img.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 .section-title-hero {
@@ -217,6 +262,8 @@ img {
       color: var(--secondary-background-color);
 
 }
+
+
 
 /* ==========Title============ */
 .section-title {
@@ -238,6 +285,7 @@ img {
 
 /* ================ Section-Aside =============== */
 .section-aside-subtitle {
+      padding-top: 30px;
       font-size: 14px;
       font-weight: 700;
       font-style: normal;
@@ -268,7 +316,7 @@ img {
       margin: 0;
       display: flex;
       justify-content: space-between;
-      
+
 
 }
 
@@ -277,16 +325,19 @@ img {
       display: flex;
       flex: wrap;
       width: 270px;
-      
-      
+
+
 }
+
 .section-aside-list:not(:last-child) {
       margin-right: 30px;
 }
+
 .examples {
       display: flex;
-      
+
 }
+
 .examples-work {
       display: flex;
       margin-top: 0px;
@@ -294,12 +345,14 @@ img {
 
       margin-left: auto;
       margin-right: auto;
-      
+
 }
+
 .examples-work:not(:last-child) {
       margin-right: 30px;
-     
+
 }
+
 /* ================ Section Comand============ */
 
 .section-portfolio,
@@ -309,10 +362,14 @@ img {
       margin-bottom: 0px;
       margin-top: 0px;
 }
+
 .section.command {
-      padding-top: 0px;
+      padding-top: 94px;
       padding-bottom: 94px;
+      background-color: var(--secondary-background-color);
+      
 }
+
 
 .command-title {
       display: flex;
@@ -320,15 +377,23 @@ img {
       margin-bottom: 0px;
 }
 
-
+.command-title-list {
+      background-color: var(--primary-white-color);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+}
 
 .command-title-list:not(:last-child) {
       margin-right: 30px;
 }
+
 .section-command-worker {
       padding-top: 30px;
       margin-bottom: 0;
 }
+
 .section-command-specialty {
       padding-bottom: 30px;
       margin-top: 10px;
@@ -367,28 +432,28 @@ img {
       margin: 0 auto;
 
 }
+
 /* ====================== Botton ================ */
 
 .button-nav {
       display: flex;
       justify-content: center;
       
-      
+
+
 }
 
-.btn-title {
-      
-     
-      
-}
+.btn-title {}
 
 .btn-title {
       margin-right: -8px;
-      
+
 }
- .container.btn-title:last-child {
-       margin-right: 0;
- }
+
+.container.btn-title:last-child {
+      margin-right: 0;
+}
+
 .btn-primary {
 
       color: var(--secondary-background-color);
@@ -427,6 +492,7 @@ img {
             0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
       border: 1px solid transparent;
+      cursor: pointer;
 
 }
 
@@ -461,12 +527,7 @@ img {
 
 
 /* ====================Portfolio============= */
-.container-porfolio {
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 15px;
-      padding-right: 15px;
-}
+
 
 .portfolio-heading {
       color: var(--primary-text-color);
@@ -498,8 +559,8 @@ img {
       margin-left: -30px;
       margin-bottom: 0px;
       padding-top: 30px;
-      
-      
+
+
 }
 
 .proect-list {
