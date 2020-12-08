@@ -508,7 +508,17 @@ img {
       color: var(--secondary-background-color);
 
 }
+/* ==================Clients============== */
+.clients-list {
+      display: flex;
+      margin: 0;
+      padding-top: 50px;
+      outline: 2px solid red;
 
+}
+.clients-item {
+      
+}
 
 /* =================== Footer =================== */
 
