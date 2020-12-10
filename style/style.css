@@ -176,8 +176,11 @@ img {
       fill: var(--adress-icon) ;
       margin-right: 10px;
 }
-.adress-icon:hover,
-.adress-icon:focus {
+.address-tel:hover .adress-icon,
+.address-tel:focus .adress-icon,
+.address-mail:hover .adress-icon,
+.address-mail:focus .adress-icon
+      {
       fill: var(--accent-color);
 }
 
@@ -463,8 +466,8 @@ img {
       background-color: var(--accent-color);
       
 }
-.command-social-icon:focus,
-.command-social-icon:hover {
+.comands-link-item:focus .command-social-icon,
+.comands-link-item:hover .command-social-icon {
       fill: var(--primary-white-color);
 }
 .command-social-icon {
